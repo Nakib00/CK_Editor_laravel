@@ -22,6 +22,11 @@
     </nav>
 
     <div class="container">
+        <div>
+            <a href="{{route('ckfinder.show')}}">
+                <button type="submit" class="btn btn-info m-3">Show</button>
+            </a>
+        </div>
         <form action="{{route('ckfinder.store')}}" method="POST">
             @csrf
             <div class="mb-3">
@@ -34,12 +39,6 @@
             </div>
             <button type="submit" class="btn btn-primary">Submit</button>
         </form>
-
-        <div>
-            <a href="{{route('ckfinder.show')}}">
-                <button type="submit" class="btn btn-info m-3">Show</button>
-            </a>
-        </div>
     </div>
 
 
